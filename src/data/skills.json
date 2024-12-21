@@ -1,0 +1,50 @@
+[
+  {
+    "name": "CSS5",
+    "logo": "css3-original-wordmark.svg"
+  },
+  {
+    "name": "HTML5",
+    "logo": "html5-original-wordmark.svg"
+  },
+  {
+    "name": "JS",
+    "logo": "javascript-original.svg"
+  },
+  {
+    "name": "TS",
+    "logo": "typescript-original.svg"
+  },
+  {
+    "name": "ReactJS",
+    "logo": "react-original-wordmark.svg"
+  },
+  {
+    "name": "Redux",
+    "logo": "redux-original.svg"
+  },
+  {
+    "name": "NodeJS",
+    "logo": "nodejs-original-wordmark.svg"
+  },
+  {
+    "name": "ExpressJS",
+    "logo": "express-original-wordmark.svg"
+  },
+  {
+    "name": "MongoDB",
+    "logo": "mongodb-original-wordmark.svg"
+  },
+  {
+    "name": "Mongoose",
+    "logo": "mongoose-original.svg"
+  },
+  {
+    "name": "Git",
+    "logo": "git-original.svg"
+  },
+  {
+    "name": "NextJS",
+    "logo": "nextjs-original-wordmark.svg"
+  }
+]
