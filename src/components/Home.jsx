@@ -5,18 +5,18 @@ import styles from "./Home.module.css";
 import profileImg from "../assets/images/profil.jpg";
 import skillsCollection from "../data/skills.json";
 import coursesCollection from "../data/courses.json";
-// import certificatesCollection from "../data/certificates.json";
+import certificatesCollection from "../data/certificates.json";
 
 export default function Home() {
   const [skills, setSkills] = useState([]);
   const [courses, setCourses] = useState([]);
-  //   const [certificates, setCertificates] = useState([]);
-console.log(skills);
+  const [certificates, setCertificates] = useState([]);
+  console.log(skills);
 
   useEffect(() => {
     setSkills(skillsCollection);
     setCourses(coursesCollection);
-    // setCertificates(certificatesCollection);
+    setCertificates(certificatesCollection);
   }, []);
 
   return (
@@ -50,7 +50,7 @@ console.log(skills);
           {skills.map((skill) => (
             <div key={skill.name} className={styles.skill}>
               <img
-                src={`../public/images/logos/${skill.logo}`}
+                src={`../../public/images/logos/${skill.logo}`}
                 alt={skill.name}
               />
               <p>{skill.name}</p>
@@ -72,11 +72,17 @@ console.log(skills);
       <div className={styles.certificates}>
         <h2>Certificates</h2>
         <div className={styles.certificatesContainer}>
-          <div className={styles.certificate}>
-            <Link>
-              <img src="" alt="" />
-            </Link>
-          </div>
+          {certificates.map((certificate) => (
+            <div key={certificate.title} className={styles.certificate}>
+              <img
+                src={`../../public/images/certificates/${certificate.images[0]}`}
+                alt=""
+              />
+              <Link>
+                <p>{certificate.title}</p>
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </section>

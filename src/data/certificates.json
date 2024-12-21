@@ -1,15 +1,15 @@
 [
   {
+    "title": "Programing Basics",
+    "images": ["Programming Basics-main.jpeg", "Programming Bassics-1.jpeg"]
+  },
+  {
     "title": "Programing Fundamentals",
     "images": [
       "Programming Fundamentals-main.jpeg",
       "Programming Fundamentals-1.jpeg",
       "Programming Fundamentals-2.jpeg"
     ]
-  },
-  {
-    "title": "Programing Basics",
-    "images": ["Programming Bassics-main.jpeg", "Programming Bassics-1.jpeg"]
   },
   {
     "title": "JS Advanced",
