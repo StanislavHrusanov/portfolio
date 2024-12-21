@@ -92,6 +92,43 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className={styles.education}>
+        <h2>Education</h2>
+        <div className={styles.courses}>
+          <div className={styles.course}>
+            <h3>Course Understanding TypeScript</h3>
+            <p>Udemy | 04.2024</p>
+          </div>
+          <div className={styles.course}>
+            <h3>Course HTML/CSS</h3>
+            <p>Software University | 05.2023 - 07.2023</p>
+          </div>
+          <div className={styles.course}>
+            <h3>Course ReactJS</h3>
+            <p>Software University | 03.2023 - 05.2023</p>
+          </div>
+          <div className={styles.course}>
+            <h3>Course JavaScript Back-End</h3>
+            <p>Software University | 01.2023 - 03.2023</p>
+          </div>
+          <div className={styles.course}>
+            <h3>Course JavaScript Applications</h3>
+            <p>Software University | 11.2022 - 12.2022</p>
+          </div>
+          <div className={styles.course}>
+            <h3>Course JavaScript Advanced</h3>
+            <p>Software University | 09.2022 - 11.2022</p>
+          </div>
+          <div className={styles.course}>
+            <h3>Course Programming Fundamentals with JavaScript</h3>
+            <p>Software University | 01.2022 - 04.2022</p>
+          </div>
+          <div className={styles.course}>
+            <h3>Course Programming Basics with JavaScript</h3>
+            <p>Software University | 09.2021 - 12.2021</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
