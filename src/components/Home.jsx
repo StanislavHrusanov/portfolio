@@ -76,7 +76,7 @@ export default function Home() {
             <div key={certificate.title} className={styles.certificate}>
               <img
                 src={`../../public/images/certificates/${certificate.images[0]}`}
-                alt=""
+                alt={certificate.title}
               />
               <Link>
                 <p>{certificate.title}</p>

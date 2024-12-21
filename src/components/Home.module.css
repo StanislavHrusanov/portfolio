@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 3rem;
   padding: 2rem 2rem;
   width: 90%;
   background-color: #122e43;
@@ -180,7 +181,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   gap: 2rem;
 }
 
@@ -326,22 +327,63 @@
 @media (min-width: 768px) {
   .title {
     flex-direction: row;
+    width: 80%;
+    gap: 3rem;
   }
 
   .profileImg {
-    width: 40%;
-    margin-right: 3rem;
+    width: 35%;
+  }
+
+  .nameAndPosition {
+    width: 65%;
+  }
+
+  .about {
+    width: 80%;
+  }
+
+  .about h2,
+  .about p {
+    width: 100%;
+  }
+
+  .mySkills {
+    width: 80%;
+  }
+
+  .mySkills h2,
+  .skills {
+    width: 100%;
   }
 
   .skill {
     width: calc(25% - 0.8rem);
   }
 
-  .certificatesContainer{
-    flex-direction: row;
+  .education {
+    width: 80%;
   }
 
-  .certificate{
+  .education h2,
+  .courses {
+    width: 100%;
+  }
+
+  .certificates {
+    width: 80%;
+  }
+
+  .certificates h2 {
+    width: 100%;
+  }
+
+  .certificatesContainer {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .certificate {
     width: calc(50% - 0.5rem);
   }
 }
@@ -375,7 +417,7 @@
     font-size: 1.75rem;
   }
 
-  .certificate{
+  .certificate {
     width: calc(33.333% - 0.666rem);
   }
 }
