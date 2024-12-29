@@ -12,10 +12,6 @@
     "logo": "javascript-original.svg"
   },
   {
-    "name": "TS",
-    "logo": "typescript-original.svg"
-  },
-  {
     "name": "ReactJS",
     "logo": "react-original-wordmark.svg"
   },
@@ -46,5 +42,9 @@
   {
     "name": "NextJS",
     "logo": "nextjs-original-wordmark.svg"
+  },
+  {
+    "name": "Handlebars",
+    "logo": "handlebars-original.svg"
   }
 ]
