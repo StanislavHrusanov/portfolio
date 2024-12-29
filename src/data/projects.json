@@ -1,0 +1,37 @@
+[
+  {
+    "title": "watch-shop.bg",
+    "image": "watch-shop.png",
+    "info": "WATCH-SHOP.BG is an online store created with React where anyone can browse and order watches. Every registered user can add watches to wishlist, to check his orders' details and status. The owner of the online store can add new watches or edit already existing once, to check orders and change their status.",
+    "gitHub": "https://github.com/StanislavHrusanov/watch-shop",
+    "hostedAt": "https://watch-shop-rjsm.onrender.com/"
+  },
+  {
+    "title": "watch-shop-rest-api",
+    "image": "watch-shop-rest-api.png",
+    "info": "This is a REST service, created by ExpressJS and used for online watch store. For building the service also has been used: Mongoose, bcrypt, jsonwebtoken, cors.",
+    "gitHub": "https://github.com/StanislavHrusanov/watch-shop-rest-api",
+    "hostedAt": "https://yellow-rattlesnake-tam.cyclic.app"
+  },
+  {
+    "title": "sportshub",
+    "image": "sportshub.png",
+    "info": "SPORTSHUB is a multi-page application created with Express and express-handlebars which introduces sport news to the users! Users can see image and details of every article. There is multiple football leagues and different sports.",
+    "gitHub": "https://github.com/StanislavHrusanov/sporthub",
+    "hostedAt": "http://sporthub-i4kh.onrender.com/"
+  },
+  {
+    "title": "real-estate-sozopol",
+    "image": "realEstateSozopol.png",
+    "info": "Real Estate Sozopol is an app which introduce different types of properties for sale located in Sozopol! Users can see details about every ad and see images upladed by the owner. The properties can be searched and sorted by different criteria like type, price, area. Also every registered user can upload own ad and add properties to watchlist.",
+    "gitHub": "https://github.com/StanislavHrusanov/real-estate-sozopol",
+    "hostedAt": "https://real-estate-sozopol.onrender.com/"
+  },
+  {
+    "title": "black-sea-resto",
+    "image": "black-sea-resto.png",
+    "info": "Black Sea Resto is an app which introduce the restaurants located on Bulgarian Black Sea! Users can see details about every restaurant also can check reviews left by other users. Also every registered user can upload own restaurant and attract future visitors.",
+    "gitHub": "https://github.com/StanislavHrusanov/black-sea-resto",
+    "hostedAt": "https://black-sea-resto.onrender.com/"
+  }
+]
