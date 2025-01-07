@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import styles from "./NavBar.module.css";
 
@@ -7,13 +7,19 @@ export default function NavBar() {
     <nav className={styles.nav}>
       <ul>
         <li>
-          <Link>Home</Link>
+          <a href="#about">About</a>
         </li>
         <li>
-          <Link>Projects</Link>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <Link>Contacts</Link>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#certificates">Certificates</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
         </li>
       </ul>
     </nav>

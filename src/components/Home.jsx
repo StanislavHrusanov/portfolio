@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <section className={styles.home}>
-      <div className={styles.title}>
+      <div id="about" className={styles.about}>
         <div className={styles.profileImg}>
           <img src={profileImg} alt="profileImage" />
         </div>
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.mySkills}>
+      <div id="skills" className={styles.mySkills}>
         <h2>My Skills</h2>
         <div className={styles.skills}>
           {skills.map((skill) => (
@@ -57,7 +57,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className={styles.education}>
+      <div id="education" className={styles.education}>
         <h2>Education</h2>
         <div className={styles.courses}>
           {courses.map((course) => (
@@ -68,7 +68,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className={styles.certificates}>
+      <div id="certificates" className={styles.certificates}>
         <h2>Certificates</h2>
         <div className={styles.certificatesContainer}>
           {certificates.map((certificate) => (
@@ -82,7 +82,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className={styles.myProjects}>
+      <div id="projects" className={styles.myProjects}>
         <h2>Projects</h2>
         <div className={styles.projects}>
           {projects.map((project) => (

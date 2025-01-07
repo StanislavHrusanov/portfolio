@@ -147,3 +147,14 @@ table {
 *::after {
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 280px;
+}
+
+@media (min-width: 1024px) {
+  html {
+    scroll-padding: 3.5rem;
+  }
+}
