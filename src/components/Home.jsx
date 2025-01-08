@@ -72,7 +72,11 @@ export default function Home() {
         <h2>Certificates</h2>
         <div className={styles.certificatesContainer}>
           {certificates.map((certificate) => (
-            <Link key={certificate.title} className={styles.certificate}>
+            <Link
+              to={`/certificates/${certificate.title}`}
+              key={certificate.title}
+              className={styles.certificate}
+            >
               <img
                 src={`/images/certificates/${certificate.images[0]}`}
                 alt={certificate.title}
