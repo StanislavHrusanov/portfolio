@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import certificatesCollection from "../data/certificates.json";
 
 import styles from "./CertificateDetails.module.css";
+import BackToHomePage from "./BackToHomePage";
 
 export default function CertificateDetails() {
   const [certificate, setCertificate] = useState({});
@@ -19,6 +20,7 @@ export default function CertificateDetails() {
 
   return (
     <div className={styles.details}>
+      <BackToHomePage />
       {certificate?.images?.map((image) => (
         <img key={image} src={`/images/certificates/${image}`} />
       ))}
