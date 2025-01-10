@@ -7,6 +7,7 @@ import skillsCollection from "../data/skills.json";
 import coursesCollection from "../data/courses.json";
 import certificatesCollection from "../data/certificates.json";
 import projectsCollection from "../data/projects.json";
+import NavBar from "./NavBar";
 
 export default function Home() {
   const [skills, setSkills] = useState([]);
@@ -23,7 +24,8 @@ export default function Home() {
 
   return (
     <section className={styles.home}>
-      <div id="about" className={styles.about}>
+      <NavBar />
+      <div className={styles.about}>
         <div className={styles.profileImg}>
           <img src={profileImg} alt="profileImage" />
         </div>
@@ -46,7 +48,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="skills" className={styles.mySkills}>
+      <div className={styles.mySkills}>
         <h2>My Skills</h2>
         <div className={styles.skills}>
           {skills.map((skill) => (
@@ -57,7 +59,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div id="education" className={styles.education}>
+      <div className={styles.education}>
         <h2>Education</h2>
         <div className={styles.courses}>
           {courses.map((course) => (
@@ -68,7 +70,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div id="certificates" className={styles.certificates}>
+      <div className={styles.certificates}>
         <h2>Certificates</h2>
         <div className={styles.certificatesContainer}>
           {certificates.map((certificate) => (
@@ -86,7 +88,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div id="projects" className={styles.myProjects}>
+      <div className={styles.myProjects}>
         <h2>Projects</h2>
         <div className={styles.projects}>
           {projects.map((project) => (

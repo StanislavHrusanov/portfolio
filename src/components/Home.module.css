@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-top: 280px;
+  padding-top: 3.5rem;
   padding-bottom: 3.5rem;
 }
 
@@ -425,10 +425,6 @@
 }
 
 @media (min-width: 1024px) {
-  .home {
-    padding-top: 3.5rem;
-  }
-
   .name span {
     font-size: 1.75rem;
   }
