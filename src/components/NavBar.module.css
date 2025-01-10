@@ -1,8 +1,8 @@
-.nav {
+.navContainer {
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -11,7 +11,30 @@
   background-color: #081b29;
 }
 
-.nav ul {
+.menu {
+  align-self: baseline;
+  padding: 3px 6px 6px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #d8dbe3;
+}
+
+.nav,
+.navMobile {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: none;
+}
+
+.nav ul,
+.navMobile ul {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +45,12 @@
   margin: 1rem 2rem;
 }
 
-.nav a {
+.navMobile ul li {
+  margin-bottom: 0.75rem;
+}
+
+.nav a,
+.navMobile a {
   font-size: 1.25rem;
   font-weight: 500;
   text-decoration: none;
@@ -35,6 +63,15 @@
 }
 
 @media (min-width: 1024px) {
+  .navMobile,
+  .menu {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+  }
+
   .nav ul {
     flex-direction: row;
   }
