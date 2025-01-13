@@ -8,7 +8,6 @@ import BackToHomePage from "./BackToHomePage";
 export default function CertificateDetails() {
   const [certificate, setCertificate] = useState({});
   const { certificateTitle } = useParams();
-  console.log(certificatesCollection);
 
   useEffect(() => {
     const certificateDetails = certificatesCollection.find(
@@ -21,9 +20,11 @@ export default function CertificateDetails() {
   return (
     <div className={styles.details}>
       <BackToHomePage />
+      <div className={styles.imgContainer}>
       {certificate?.images?.map((image) => (
         <img key={image} src={`/images/certificates/${image}`} />
       ))}
+      </div>
     </div>
   );
 }
