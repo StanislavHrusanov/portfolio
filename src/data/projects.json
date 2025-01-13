@@ -2,21 +2,21 @@
   {
     "title": "watch-shop.bg",
     "image": "watch-shop.png",
-    "info": "WATCH-SHOP.BG is an online store created with React where anyone can browse and order watches. Every registered user can add watches to wishlist, to check his orders' details and status. The owner of the online store can add new watches or edit already existing once, to check orders and change their status.",
+    "info": "WATCH-SHOP.BG is an online store created with React where anyone can browse and order watches. Every registered user can add watches to wishlist and cart, to check details and status of orders. The owner of the online store can add new watches or edit already existing once, to check orders and change their status. There are searching, sorting and filtering functionalities. All pages have pagination.",
     "gitHub": "https://github.com/StanislavHrusanov/watch-shop",
     "hostedAt": "https://watch-shop-rjsm.onrender.com/"
   },
   {
     "title": "watch-shop-rest-api",
     "image": "watch-shop-rest-api.png",
-    "info": "This is a REST service, created by ExpressJS and used for online watch store. For building the service also has been used: Mongoose, bcrypt, jsonwebtoken, cors.",
+    "info": "This is a REST service, created by NodeJS/ExpressJS and used for online watch store. For building the service also has been used: Mongoose, bcrypt, jsonwebtoken, cors. It provides several functionalities like - authentication (registration, login, logout, authorized requests), getting all watches with sorting and filtering options, searching for watch, getting watch details, adding watch , editing or deleting an existing watch, adding or removing a watch to wishlist, placing an order, etc",
     "gitHub": "https://github.com/StanislavHrusanov/watch-shop-rest-api",
-    "hostedAt": "https://yellow-rattlesnake-tam.cyclic.app"
+    "hostedAt": ""
   },
   {
     "title": "sportshub",
     "image": "sportshub.png",
-    "info": "SPORTSHUB is a multi-page application created with Express and express-handlebars which introduces sport news to the users! Users can see image and details of every article. There is multiple football leagues and different sports.",
+    "info": "SPORTSHUB is a multi-page application created with NodeJS/ExpressJS and express-handlebars which introduces sport news to the users! Users can see image and details of every article. There is multiple football leagues and different sports. Only authorized user can add new articles or edit and delete an existing one. The app has search functionality and pagination. Also it has options for registering and login.",
     "gitHub": "https://github.com/StanislavHrusanov/sporthub",
     "hostedAt": "http://sporthub-i4kh.onrender.com/"
   },
@@ -30,7 +30,7 @@
   {
     "title": "black-sea-resto",
     "image": "black-sea-resto.png",
-    "info": "Black Sea Resto is an app which introduce the restaurants located on Bulgarian Black Sea! Users can see details about every restaurant also can check reviews left by other users. Also every registered user can upload own restaurant and attract future visitors.",
+    "info": "Black Sea Resto is an app which introduce the restaurants located on Bulgarian Black Sea! Users can see details about every restaurant also can check reviews left by other users. Also every registered user can upload own restaurant and attract future visitors. Every registered user can leave a review with rating and comment. The app has functionalities for searching and sorting restaurants.",
     "gitHub": "https://github.com/StanislavHrusanov/black-sea-resto",
     "hostedAt": "https://black-sea-resto.onrender.com/"
   }
