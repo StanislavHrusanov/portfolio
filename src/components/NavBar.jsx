@@ -17,14 +17,14 @@ export default function NavBar() {
       {isNavToggled && (
         <nav className={styles.navMobile}>
           <ul>
-            <li>
+            {/* <li>
               <Link to="/">Home</Link>
+            </li> */}
+            <li>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="/#about">About</a>
-            </li>
-            <li>
-              <a href="/#skills">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
               <a href="#education">Education</a>
@@ -40,9 +40,9 @@ export default function NavBar() {
       )}
       <nav className={styles.nav}>
         <ul>
-          <li>
+          {/* <li>
             <Link to="/">Home</Link>
-          </li>
+          </li> */}
           <li>
             <a href="#about">About</a>
           </li>
