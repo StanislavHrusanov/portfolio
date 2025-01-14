@@ -106,6 +106,30 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <div id="contacts" className={styles.contacts}>
+        <h2>Contacts</h2>
+        <div className={styles.emailAndPhone}>
+          <div>
+            <img src="/images/logos/mail.svg" alt="" />
+            <span>stanislavhrusanov1987@abv.bg</span>
+          </div>
+          <div>
+            <img src="/images/logos/phone.svg" alt="" />
+            <span>+359884090995</span>
+          </div>
+        </div>
+        <div className={styles.socials}>
+          <a href="https://www.linkedin.com/in/stanislav-hrusanov-72670a2bb/">
+            <img src="/images/logos/linkedin.svg" alt="" />
+          </a>
+          <a href="https://github.com/StanislavHrusanov">
+            <img src="/images/logos/github.svg" alt="" />
+          </a>
+          <a href="https://www.facebook.com/stanislav.hrusanov">
+            <img src="/images/logos/facebook.svg" alt="" />
+          </a>
+        </div>
+      </div>
     </section>
   );
 }
