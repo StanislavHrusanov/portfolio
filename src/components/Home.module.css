@@ -8,8 +8,7 @@
   padding-bottom: 4.25rem;
 }
 
-.about,
-.contacts {
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,16 +203,8 @@
   transition: 0.3s;
 }
 
-.contacts h2 {
-  width: 90%;
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #d8dbe3;
-}
-
 .emailAndPhone {
-  margin-top: 1rem;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -249,8 +240,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  margin-top: 1rem;
+  width: 100%;
   padding: 16px 8px;
   gap: 1rem;
   background-color: #204d6f;
@@ -326,18 +316,6 @@
 
   .skill {
     width: calc(25% - 0.8rem);
-  }
-
-  /* .certificatesContainer,
-  .projects {
-    flex-direction: row;
-    width: 100%;
-  } */
-
-  /* .courses, */
-  .emailAndPhone,
-  .socials {
-    width: 100%;
   }
 
   .certificate,

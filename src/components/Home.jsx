@@ -99,8 +99,7 @@ export default function Home() {
         ))}
       </Section>
 
-      <section id="contacts" className={styles.contacts}>
-        <h2>Contacts</h2>
+      <Section id="contacts" title="Contacts">
         <div className={styles.emailAndPhone}>
           <div>
             <img src="/images/logos/mail.svg" alt="" />
@@ -122,7 +121,7 @@ export default function Home() {
             <img src="/images/logos/facebook.svg" alt="" />
           </a>
         </div>
-      </section>
+      </Section>
     </div>
   );
 }
