@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import projectsCollection from "../data/projects.json";
 
 import styles from "./ProjectDetails.module.css";
-import BackToHomePage from "./BackToHomePage";
+import BackToHomePage from "../components/BackToHomePage";
 
 export default function ProjectDetails() {
   const [project, setProject] = useState({});

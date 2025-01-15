@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import certificatesCollection from "../data/certificates.json";
 
 import styles from "./CertificateDetails.module.css";
-import BackToHomePage from "./BackToHomePage";
+import BackToHomePage from "../components/BackToHomePage";
 
 export default function CertificateDetails() {
   const [certificate, setCertificate] = useState({});

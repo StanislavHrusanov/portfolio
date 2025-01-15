@@ -7,8 +7,8 @@ import skillsCollection from "../data/skills.json";
 import coursesCollection from "../data/courses.json";
 import certificatesCollection from "../data/certificates.json";
 import projectsCollection from "../data/projects.json";
-import NavBar from "./NavBar";
-import Section from "./Section";
+import NavBar from "../components/NavBar";
+import Section from "../components/Section";
 
 export default function Home() {
   const [skills, setSkills] = useState([]);
