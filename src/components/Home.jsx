@@ -8,6 +8,7 @@ import coursesCollection from "../data/courses.json";
 import certificatesCollection from "../data/certificates.json";
 import projectsCollection from "../data/projects.json";
 import NavBar from "./NavBar";
+import Section from "./Section";
 
 export default function Home() {
   const [skills, setSkills] = useState([]);
@@ -23,9 +24,9 @@ export default function Home() {
   }, []);
 
   return (
-    <section className={styles.home}>
+    <div className={styles.home}>
       <NavBar />
-      <div id="about" className={styles.about}>
+      <section id="about" className={styles.about}>
         <div className={styles.profileImg}>
           <img src={profileImg} alt="profileImage" />
         </div>
@@ -46,67 +47,59 @@ export default function Home() {
             real-world development environment.
           </p>
         </div>
-      </div>
+      </section>
 
-      <div id="skills" className={styles.mySkills}>
-        <h2>My Skills</h2>
-        <div className={styles.skills}>
-          {skills.map((skill) => (
-            <div key={skill.name} className={styles.skill}>
-              <img src={`/images/logos/${skill.logo}`} alt={skill.name} />
-              <p>{skill.name}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div id="education" className={styles.education}>
-        <h2>Education</h2>
-        <div className={styles.courses}>
-          {courses.map((course) => (
-            <div key={course.name} className={styles.course}>
-              <h3>{course.name}</h3>
-              <p>{course.info}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-      <div id="certificates" className={styles.certificates}>
-        <h2>Certificates</h2>
-        <div className={styles.certificatesContainer}>
-          {certificates.map((certificate) => (
-            <Link
-              to={`/certificates/${certificate.title}`}
-              key={certificate.title}
-              className={styles.certificate}
-            >
-              <img
-                src={`/images/certificates/${certificate.images[0]}`}
-                alt={certificate.title}
-              />
-              <p>{certificate.title}</p>
-            </Link>
-          ))}
-        </div>
-      </div>
-      <div id="projects" className={styles.myProjects}>
-        <h2>Projects</h2>
-        <div className={styles.projects}>
-          {projects.map((project) => (
-            <Link
-              to={`/projects/${project.title}`}
-              key={project.title}
-              className={styles.project}
-            >
-              <img
-                src={`/images/projects/${project.image}`}
-                alt={project.title}
-              />
-              <p>{project.title}</p>
-            </Link>
-          ))}
-        </div>
-      </div>
-      <div id="contacts" className={styles.contacts}>
+      <Section id="skills" title="Skills">
+        {skills.map((skill) => (
+          <div key={skill.name} className={styles.skill}>
+            <img src={`/images/logos/${skill.logo}`} alt={skill.name} />
+            <p>{skill.name}</p>
+          </div>
+        ))}
+      </Section>
+
+      <Section id="education" title="Education">
+        {courses.map((course) => (
+          <div key={course.name} className={styles.course}>
+            <h3>{course.name}</h3>
+            <p>{course.info}</p>
+          </div>
+        ))}
+      </Section>
+
+      <Section id="certificates" title="Certificates">
+        {certificates.map((certificate) => (
+          <Link
+            to={`/certificates/${certificate.title}`}
+            key={certificate.title}
+            className={styles.certificate}
+          >
+            <img
+              src={`/images/certificates/${certificate.images[0]}`}
+              alt={certificate.title}
+            />
+            <p>{certificate.title}</p>
+          </Link>
+        ))}
+      </Section>
+
+      <Section id="projects" title="Projects">
+        {projects.map((project) => (
+          <Link
+            to={`/projects/${project.title}`}
+            key={project.title}
+            className={styles.project}
+          >
+            <img
+              src={`/images/projects/${project.image}`}
+              alt={project.title}
+            />
+            <p>{project.title}</p>
+          </Link>
+        ))}
+      </Section>
+
+      <section id="contacts" className={styles.contacts}>
         <h2>Contacts</h2>
         <div className={styles.emailAndPhone}>
           <div>
@@ -129,7 +122,7 @@ export default function Home() {
             <img src="/images/logos/facebook.svg" alt="" />
           </a>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
