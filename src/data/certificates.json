@@ -26,5 +26,9 @@
   {
     "title": "ReactJS",
     "images": ["ReactJS-main.jpeg", "ReactJS-1.jpeg"]
+  },
+  {
+    "title": "Understanding TypeScript",
+    "images": ["TypeScriptCertificate.jpg"]
   }
 ]
